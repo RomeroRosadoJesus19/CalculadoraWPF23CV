@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HD-wallpaper-neon-frame-lights-anime-designs-drawing-frames-other.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HD-wallpaper-neon-frame-lights-anime-designs-drawing-frames-other.jpg" />
+  </ItemGroup>
+
+</Project>

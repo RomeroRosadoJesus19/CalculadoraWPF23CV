@@ -1,0 +1,48 @@
+﻿<Window x:Class="Calculadora23CV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora23CV"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="430" Width="340">
+    <Window.Resources>
+
+        <!-- Propiedades por defecto de los botones -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF4AC5F1"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+            <EventSetter Event="Click" Handler="ButtonClick"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/HD-wallpaper-neon-frame-lights-anime-designs-drawing-frames-other.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="Resultado" HorizontalAlignment="Center" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260"  Height="51"/>
+        <Button x:Name="Division" Content="/" HorizontalAlignment="Left" Height="41" Margin="40,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
+        <Button x:Name="Multiplicacion" Content="*" HorizontalAlignment="Left" Height="41" Margin="110,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
+        <Button x:Name="Suma" Content="+" HorizontalAlignment="Left" Height="41" Margin="181,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
+        <Button x:Name="Resta"   Content="-" HorizontalAlignment="Left" Height="41" Margin="249,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
+        <Button x:Name="Num1" Content="1" HorizontalAlignment="Left" Height="41" Margin="40,150,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num2" Content="2" HorizontalAlignment="Left" Height="41" Margin="110,150,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num3" Content="3" HorizontalAlignment="Left" Height="41" Margin="181,150,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num4" Content="4" HorizontalAlignment="Left" Height="41" Margin="40,211,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num5" Content="5" HorizontalAlignment="Left" Height="41" Margin="110,211,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num6" Content="6" HorizontalAlignment="Left" Height="41" Margin="181,211,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num7" Content="7" HorizontalAlignment="Left" Height="41" Margin="40,270,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num8" Content="8" HorizontalAlignment="Left" Height="41" Margin="110,270,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num9" Content="9" HorizontalAlignment="Left" Height="41" Margin="181,270,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="LetraC" Content="C" HorizontalAlignment="Left" Height="41" Margin="249,150,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="LetraCE" Content="CE" HorizontalAlignment="Left" Height="41" Margin="249,211,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="coma" Content="," HorizontalAlignment="Left" Height="41" Margin="249,270,0,0" VerticalAlignment="Top" Width="45"  FontSize="20" Background="White"/>
+        <Button x:Name="Num0" Content="0" HorizontalAlignment="Left" Height="41" Margin="40,335,0,0" VerticalAlignment="Top" Width="115"  FontSize="20" Background="White"/>
+        <Button x:Name="igual" Content="=" HorizontalAlignment="Left" Height="41" Margin="181,335,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Background="White"/>
+
+       
+    </Grid>
+    
+</Window>
