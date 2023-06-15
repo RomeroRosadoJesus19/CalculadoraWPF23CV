@@ -22,7 +22,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/HD-wallpaper-neon-frame-lights-anime-designs-drawing-frames-other.jpg"/>
         </Grid.Background>
-        <TextBox x:Name="Resultado" HorizontalAlignment="Center" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260"  Height="51"/>
+        <TextBox x:Name="Screen" HorizontalAlignment="Center" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260"  Height="51"/>
         <Button x:Name="Division" Content="/" HorizontalAlignment="Left" Height="41" Margin="40,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
         <Button x:Name="Multiplicacion" Content="*" HorizontalAlignment="Left" Height="41" Margin="110,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>
         <Button x:Name="Suma" Content="+" HorizontalAlignment="Left" Height="41" Margin="181,88,0,0" VerticalAlignment="Top" Width="45" FontSize="20" Background="White"/>

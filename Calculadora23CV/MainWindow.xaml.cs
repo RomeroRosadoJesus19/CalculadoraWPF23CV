@@ -25,19 +25,74 @@ namespace Calculadora23CV
             InitializeComponent();
         }
 
-       public void ButtonClick(object sender, RoutedEventArgs e)
+        public void ButtonClick(object sender, RoutedEventArgs e)
         {
             try
             {
                 Button button = (Button)sender;
-            MessageBox.Show("Ha dado un click");
+                string value = (string)button.Content;
+
+                if (IsNumber(value))
+                {
+                    HandleNumbers(value);   
+                }
+                else if (IsOperator(value)) 
+                {
+                    HandleOperator(value);  
+                }
+
             }
-            catch (Exception ex)
-            {
+           catch (Exception ex)
+           {
 
                 throw new Exception("Surgio un error"+ex.Message);  
             }
         }
+
+       private bool IsNumber(string Num)
+        {
+            //if (double.TryParse(Num, out _))
+            //{ 
+            //    return true;    
+            //}
+            return double.TryParse(Num, out _);  
+
+        }
+
+
+        private void HandleNumbers(string value)
+        {
+            if (string.IsNullOrEmpty(Screen.Text))
+            {
+                Screen.Text = value;
+            }
+            else
+            {
+                Screen.Text += value;
+            }
+             
+        }
+
+        private bool IsOperator(string posibleOperator)
+        {
+            //if (posibleOperator == "+" || posibleOperator == "*" || posibleOperator == "*" || posibleOperator == "/" )
+            //{
+            //    return true;    
+            //}
+            //return false;
+
+            return posibleOperator == "+" || posibleOperator == "*" || posibleOperator == "*" || posibleOperator == "/";
+        }
+
+        private void HandleOperator(string value)
+        {
+            if (!String.IsNullOrEmpty(Screen.Text)) 
+            {
+                Screen.Text += value;
+            }
+        }
+
+
 
     }
 }
